@@ -3,8 +3,6 @@ import HeaderPage from "./HeaderPage";
 import "../styles/DashBoard.css";
 import pixfix from "../Multimedia/images/HEYGEN-Orb-SocialAnimation-Exp-unscreen.gif";
 import pixfixVideo from "../Multimedia/videos/video_4736be8da8 (1).mp4";
-import pixverse from "../Multimedia/videos/pixverse_mp4_media_web_ori_2a47c7a2-0af3-4cdf-9f72-ebb371a053d9_seed1586453621.mp4";
-import pixgix from "../Multimedia/videos/V5上线_正片_PixVerse_V2_压缩_0901_帅.mp4";
 import MarquePage from "./MarquePage";
 
 const DashBoard = () => {
@@ -79,10 +77,10 @@ const DashBoard = () => {
           </div>
           <div className="video-gallery-container">
             <div>
-              <video src={pixverse} controls></video>
+              <video src="https://tempfile.aiquickdraw.com/p/f879c606-799c-4315-981d-c22b25252ada.mp4" controls></video>
             </div>
             <div>
-              <video src={pixgix} controls></video>
+              <video src="https://tempfile.aiquickdraw.com/p/eb3d4d0c-9c5c-48a5-87bf-7bc956f9a443.mp4" controls></video>
             </div>
             <div>
               <video
