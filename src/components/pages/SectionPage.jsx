@@ -1,7 +1,7 @@
 import { videoContext } from "@/context/videoContext";
 import React, { useContext, useEffect } from "react";
 
-const SectionVideoPage = () => {
+const SectionPage = () => {
   const { userVideos, getVideos, getUserVideos } = useContext(videoContext);
   useEffect(() => {
     getUserVideos();
@@ -24,4 +24,4 @@ const SectionVideoPage = () => {
   );
 };
 
-export default SectionVideoPage;
+export default SectionPage;
