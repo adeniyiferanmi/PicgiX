@@ -56,7 +56,7 @@ const AuthProvider = ({ children }) => {
       if (response.ok) {
         toast.success("Login successful.Redirecting to dashboard...");
         localStorage.setItem("token", resData.token);
-        navigate("/prompt");
+        navigate("/");
       }
     } catch (error) {
       toast.error(error.message || "Something went wrong");
@@ -66,7 +66,7 @@ const AuthProvider = ({ children }) => {
   };
   const logOut = () => {
     localStorage.removeItem("token");
-    navigate("/");
+    navigate("/dashboard");
   }
   const isAuth = async () => {
     const getToken = localStorage.getItem("token");

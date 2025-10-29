@@ -11,7 +11,7 @@ const ProtectedRoutes = () => {
             try {
                  const auth = await isAuth()
             if (!auth) {
-                navigate("/login")
+                navigate("/dashboard")
                 toast.error("Please login to access this page")
                 return
             }
