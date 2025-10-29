@@ -1,31 +1,27 @@
-import { videoContext } from '@/context/videoContext'
-import React, { useContext, useEffect } from 'react'
+import { videoContext } from "@/context/videoContext";
+import React, { useContext, useEffect } from "react";
 
-const SectionvideoPage = () => {
-    const { userVideos, getVideos,getUserVideos } =  useContext(videoContext)
-    useEffect(() => {
-        getUserVideos()
-    },[])
+const SectionVideoPage = () => {
+  const { userVideos, getVideos, getUserVideos } = useContext(videoContext);
+  useEffect(() => {
+    getUserVideos();
+  }, []);
   return (
     <div>
-        {
-            getVideos && (
-                <div style={{textAlign:"center"}}>
-                    <h1>No Videos Generated</h1>
-                </div>
-            )
-        }
-    <div className='video-section'>
-        {
-            userVideos?.video?.slice(0, 3).map((video, index) =>(
-                <div key={index}>
-                    <video src={video?.videoInfo?.videoUrl} controls />
-                </div>
-            ))
-        }
+      {getVideos && (
+        <div style={{ textAlign: "center" }}>
+          <h1>No Videos Generated</h1>
+        </div>
+      )}
+      <div className="video-section">
+        {userVideos?.video?.slice(0, 3).map((video, index) => (
+          <div key={index}>
+            <video src={video?.videoInfo?.videoUrl} controls />
+          </div>
+        ))}
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default SectionvideoPage
+export default SectionVideoPage;

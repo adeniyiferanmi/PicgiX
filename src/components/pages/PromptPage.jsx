@@ -8,7 +8,7 @@ import { FormProvider, useForm } from "react-hook-form";
 import { videoContext } from "@/context/videoContext";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import SectionvideoPage from "./sectionvideoPage";
+import SectionVideoPage from "./sectionvideoPage";
 import MarquePage from "./MarquePage";
 
 const aspectRatio = ["16:9", "4:3", "1:1", "9:16", "3:4"];
@@ -148,7 +148,7 @@ const PromptPage = () => {
           <p>Explore our collection of</p>
           <h1> AI-Generated Videos</h1>
         </div>
-        <SectionvideoPage />
+        <SectionVideoPage/>
         <div className="view-container">
           <a href="/videos">
           <button>
