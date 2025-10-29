@@ -24,11 +24,11 @@ function App() {
           <VideoProvider>
             
             <Routes>
-              <Route path="/" element={<DashBoard />} />
+              <Route path="/dashbord" element={<DashBoard />} />
               <Route path="/signup" element={<SignUp />} />
               <Route path="/login" element={<LoginPage />} />
               <Route element={<ProtectedRoutes />}>
-                <Route path="/prompt" element={<PromptPage />} />
+                <Route path="/" element={<PromptPage />} />
                 <Route path="/contact" element={<ContactPage/>}/>
                 <Route path="/videos" element={<VideosPage/>}/>
                 <Route path="/pricing" element={<PricingPage/>}/>

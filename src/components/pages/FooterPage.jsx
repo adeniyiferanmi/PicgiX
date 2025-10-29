@@ -58,7 +58,7 @@ const FooterPage = () => {
                     </li>
                     <li>
                       <a
-                        href=""
+                        href="/login"
                         class="hover:underline"
                       >
                         Login
@@ -66,7 +66,7 @@ const FooterPage = () => {
                     </li>
                     <li>
                       <a
-                        href=""
+                        href="/signup"
                         class="hover:underline"
                       >
                         Sign Up
@@ -81,7 +81,7 @@ const FooterPage = () => {
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                     <li class="mb-4">
                       <a
-                        href=""
+                        href="/"
                         class="hover:underline "
                       >
                         Generate
@@ -97,7 +97,7 @@ const FooterPage = () => {
                     </li>
                     <li>
                       <a
-                        href=""
+                        href="/pricing"
                         class="hover:underline"
                       >
                         Pricing
@@ -113,7 +113,7 @@ const FooterPage = () => {
                     </li>
                     <li>
                       <a
-                        href=""
+                        href="/contact"
                         class="hover:underline"
                       >
                         Contact Us

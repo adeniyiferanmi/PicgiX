@@ -23,7 +23,7 @@ const HeaderPage = ({headerLogin,headerSignUp,headerLinks,headerLink,onClickButt
       >
       <div className="flex  header-container ">
         <div>
-          <a href="/prompt">
+          <a href="/">
             <img
               src={picfixLogo}
               alt="PicfiX"
@@ -33,7 +33,7 @@ const HeaderPage = ({headerLogin,headerSignUp,headerLinks,headerLink,onClickButt
         <div className="ul-container">
           <ul className="">
             <li>
-              <a href="/prompt">
+              <a href="/">
                 Home{" "}
                
               </a>
@@ -51,7 +51,7 @@ const HeaderPage = ({headerLogin,headerSignUp,headerLinks,headerLink,onClickButt
               </a>
             </li>
             <li>
-              <a href="/prompt">
+              <a href="/">
                 Pages{" "}
                 
               </a>
