@@ -127,7 +127,7 @@ const PromptPage = () => {
           <div className="loading">
             <p>Generating your video, please wait...</p>
             <div className="spinner">
-              <span class="material-symbols-outlined">progress_activity</span>
+              {/* <span class="material-symbols-outlined">progress_activity</span> */}
             </div>
           </div>
         )}
