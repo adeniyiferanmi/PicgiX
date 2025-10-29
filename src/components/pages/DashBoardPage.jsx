@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderPage from "./HeaderPage";
-import "../styles/DashBoard.css";
+import "../styles/dashboard.css";
 import pixfix from "../Multimedia/images/HEYGEN-Orb-SocialAnimation-Exp-unscreen.gif";
 import pixfixVideo from "../Multimedia/videos/video_4736be8da8 (1).mp4";
 import MarquePage from "./MarquePage";
