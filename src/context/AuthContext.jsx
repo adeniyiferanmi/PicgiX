@@ -83,7 +83,6 @@ const AuthProvider = ({ children }) => {
         },
       });
       const response = await res.json()
-      console.log(response);
       
       setUserData(response.user)
       if (response.status == "success") {

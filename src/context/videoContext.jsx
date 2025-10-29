@@ -46,7 +46,6 @@ const getUserVideos = async () => {
         })
         const res = await response.json()
         setUserVideos(res)
-        console.log(res)
 
     } catch (error) {
         console.log(error);
