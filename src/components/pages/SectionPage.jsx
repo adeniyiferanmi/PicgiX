@@ -9,7 +9,7 @@ const SectionVideoPage = () => {
   return (
     <div>
       {getVideos && (
-        <div style={{ textAlign: "center" }}>
+        <div className="no-video">
           <h1>No Videos Generated</h1>
         </div>
       )}

@@ -9,7 +9,7 @@ import { videoContext } from "@/context/videoContext";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import MarquePage from "./MarquePage";
-import SectionVideoPage from "./SectionvideoPage";
+import SectionVideoPage from "./SectionPage";
 
 const aspectRatio = ["16:9", "4:3", "1:1", "9:16", "3:4"];
 const quality = ["720p", "1080p"];
