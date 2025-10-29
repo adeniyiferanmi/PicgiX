@@ -1,7 +1,6 @@
-import React, { use, useContext } from "react";
+import React, {  useContext } from "react";
 import HeaderPage from "./HeaderPage";
 import "../styles/prompt.css";
-import { Sidebar } from "lucide-react";
 import SidebarPage from "./SidebarPage";
 import { authContext } from "@/context/AuthContext";
 import { FormProvider, useForm } from "react-hook-form";
