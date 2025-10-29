@@ -8,8 +8,8 @@ import { FormProvider, useForm } from "react-hook-form";
 import { videoContext } from "@/context/videoContext";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import SectionVideoPage from "./SectionVideoPage";
 import MarquePage from "./MarquePage";
+import SectionVideoPage from "./SectionvideoPage";
 
 const aspectRatio = ["16:9", "4:3", "1:1", "9:16", "3:4"];
 const quality = ["720p", "1080p"];
