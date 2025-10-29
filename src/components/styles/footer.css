@@ -1,0 +1,118 @@
+.footer-container {
+  background-color: hsl(113 27% 6%);
+  background-image: repeating-linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 50px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 50px
+    );
+  position: relative;
+  overflow: hidden;
+}
+.footer-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    125deg,
+    rgba(255, 255, 255, 0.07),
+    rgba(255, 255, 255, 0.07) 1px,
+    transparent 1px,
+    transparent 60px
+  );
+  filter: blur(1px);
+  pointer-events: none;
+}
+.footer-content-container {
+  width: 85%;
+  margin: auto;
+  padding-top: 100px;
+}
+.document-container ul {
+  display: flex;
+  gap: 15px;
+  color: rgb(171, 171, 171);
+  font-size: 18px;
+}
+.line-container {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.line-container a {
+  color: rgb(171, 171, 171);
+  font-size: 18px;
+}
+hr {
+  color: rgba(171, 171, 171, 0.486);
+  margin-top: 50px;
+}
+.img-container img {
+  width: 150px;
+}
+.paragraph-container {
+  color: rgb(171, 171, 171);
+  font-size: 16px;
+  /* width: 300px; */
+  line-height: 26px;
+}
+.img-container h3 {
+  color: rgb(171, 171, 171);
+  font-size: 25px;
+  font-weight: bold;
+}
+.img-container h3:hover {
+  color: rgba(180, 253, 53, 0.829);
+}
+.example-container {
+  color: rgb(171, 171, 171);
+  font-size: 18px;
+  padding-bottom: 5px;
+  line-height: 80px;
+  border-bottom: 1px solid rgb(171, 171, 171);
+}
+.example-container:hover {
+  color: rgba(180, 253, 53, 0.829);
+}
+.list-container li {
+  list-style: disc;
+  color: rgb(171, 171, 171);
+  font-size: 18px;
+  line-height: 50px;
+}
+.footer-container li:hover {
+  color: rgba(180, 253, 53, 0.829);
+  text-decoration: none;
+}
+.footer-container h2 {
+  color: rgb(171, 171, 171);
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.footer-container input{
+    padding: 18px;
+    background-color: rgb(38,50,36);
+    color: rgb(171, 171, 171);
+    border: none;
+    margin-top: 25px;
+}
+.submit-button {
+    padding: 8px;
+    width: 100px;
+    color: rgb(189, 185, 185);
+    font-size: 16px;
+     background: linear-gradient(
+    80deg,
+    rgba(20, 197, 20, 0.753),
+    rgba(255, 255, 0, 0.664)
+    
+  )
+}

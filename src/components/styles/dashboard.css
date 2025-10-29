@@ -1,0 +1,506 @@
+.dashboard-container {
+  background: linear-gradient(90deg, rgb(235, 247, 130), white);
+}
+
+.ai-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  padding-top: 180px;
+}
+.text-container h1 {
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 70px;
+}
+.text-container p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.text-container button {
+  width: 300px;
+  padding: 15px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 0, 0.877),
+    rgba(20, 197, 20, 0.753)
+  );
+  margin-top: 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  color: gray;
+}
+
+.about-us-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  gap: 30px;
+}
+.about-us-container .p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.text-aboutus-container h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
+  padding-top: 20px;
+}
+.video-aboutus-container video {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 400px;
+}
+.about-us-container button {
+  width: 300px;
+  padding: 15px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 0, 0.877),
+    rgba(20, 197, 20, 0.753)
+  );
+  margin-top: 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  color: gray;
+}
+.about-us-content {
+  background: linear-gradient(90deg, rgb(35, 39, 1), black);
+  margin-top: 100px;
+}
+.aboutus-paragraph {
+  color: rgb(207, 243, 65);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.aboutus-paragraph::before,
+.aboutus-paragraph::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("https://photoclerks.com/html/pixgix/pixgix/assets/images/icon/sub-title.svg")
+    no-repeat center center;
+  background-size: contain;
+}
+.text-gallery-container p::after {
+  margin-left: 8px;
+}
+
+.gallery-container {
+  margin: auto;
+  width: 80%;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.gallery-content {
+  background-color: white;
+}
+
+.text-gallery-container {
+  text-align: center;
+}
+.text-gallery-container p {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  color: rgb(207, 243, 65);
+  font-size: 20px;
+}
+
+.text-gallery-container p::before,
+.text-gallery-container p::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("https://photoclerks.com/html/pixgix/pixgix/assets/images/icon/sub-title.svg")
+    no-repeat center center;
+  background-size: contain;
+}
+.text-gallery-container p::after {
+  margin-left: 8px;
+}
+.text-gallery-container h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
+  padding-bottom: 40px;
+}
+.video-gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.video-gallery-container div video {
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  height: 250px;
+}
+.text-to-video-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  gap: 30px;
+}
+.text-to-video-content {
+  background: linear-gradient(90deg, rgb(35, 39, 1), black);
+}
+.text-to-video-text-container h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
+  padding-top: 20px;
+}
+.text-to-video-text-container .par {
+  color: rgb(207, 243, 65);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.text-to-video-text-container .par::before,
+.text-to-video-text-container .par::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("https://photoclerks.com/html/pixgix/pixgix/assets/images/icon/sub-title.svg")
+    no-repeat center center;
+  background-size: contain;
+}
+.text-to-video-text-container .par::after {
+  margin-left: 8px;
+}
+.text-to-video-text-container p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.text-to-video-text-container button {
+  width: 300px;
+  padding: 15px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 0, 0.877),
+    rgba(20, 197, 20, 0.753)
+  );
+  margin-top: 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  color: gray;
+}
+.marquee-container {
+  background-color: rgb(12, 19, 11);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.marquee img {
+  animation: spin 10s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.subcription-container {
+  background-color: black;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.subcription-content {
+  width: 80%;
+  margin: auto;
+}
+.subcription-text-container {
+  text-align: center;
+}
+.subcription-text-container p {
+  color: rgb(207, 243, 65);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.subcription-text-container p::before,
+.subcription-text-container p::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("https://photoclerks.com/html/pixgix/pixgix/assets/images/icon/sub-title.svg")
+    no-repeat center center;
+  background-size: contain;
+}
+.subcription-text-container p::after {
+  margin-left: 8px;
+}
+.subcription-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 60px;
+}
+.subcription-grid-container div {
+  background-color: rgb(20, 27, 19);
+  padding: 30px 20px;
+  border-radius: 15px;
+}
+.subcription-grid-container div:hover {
+  border: 1px solid rgb(179, 253, 53);
+}
+.subcription-grid-container div h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgb(171, 171, 171);
+}
+.subcription-grid-container div h1 {
+  color: rgb(207, 243, 65);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
+}
+.subcription-grid-container div hr {
+  color: rgba(128, 128, 128, 0.212);
+  margin-top: 25px;
+}
+.subcription-grid-container div span {
+  margin-right: 5px;
+  color: rgb(207, 243, 65);
+}
+.subcription-grid-container div p {
+  font-size: 16px;
+}
+.subcription-grid-container div button {
+  width: 150px;
+  border: 1px solid rgb(179, 253, 53);
+  color: gray;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 13px;
+}
+.subcription-grid-container div button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 0, 0.877),
+    rgba(20, 197, 20, 0.753)
+  );
+  border: none;
+}
+.feature-container {
+  background-color: white;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.feature-content {
+  width: 80%;
+  margin: auto;
+}
+.feature-text-container {
+  text-align: center;
+}
+.feature-text-container p {
+  color: rgb(207, 243, 65);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.feature-text-container p::before,
+.feature-text-container p::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("https://photoclerks.com/html/pixgix/pixgix/assets/images/icon/sub-title.svg")
+    no-repeat center center;
+  background-size: contain;
+}
+.feature-text-container h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
+}
+.feature-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 50px;
+}
+.feature-display-container {
+  background-color: rgb(20, 27, 19);
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.feature-display-container:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 0, 0.877),
+    rgba(20, 197, 20, 0.753)
+  );
+}
+.feature-display-container img {
+  background-color: rgb(28, 35, 27);
+  padding: 15px;
+  width: 150px;
+}
+.feature-display-container div h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  color: rgb(171, 171, 171);
+}
+.testimonial-container {
+  background-color: rgb(20, 27, 19);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.testimonial-content {
+  width: 80%;
+  margin: auto;
+}
+.testimonial-text-container {
+  text-align: center;
+}
+.testimonial-text-container p {
+  color: rgb(207, 243, 65);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.testimonial-text-container p::before,
+.testimonial-text-container p::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("https://photoclerks.com/html/pixgix/pixgix/assets/images/icon/sub-title.svg")
+    no-repeat center center;
+  background-size: contain;
+}
+.testimonial-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.testimonial-grid-container {
+  display: flex;
+  padding-top: 40px;
+  gap: 30px;
+  position: relative;
+  animation: scroll 25s linear infinite;
+}
+.testimonial-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.testimonial-wrapper {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.testimonial-grid-container:hover {
+  animation-play-state: paused;
+}
+
+.testimonial-display-container {
+  background-color: rgb(28, 35, 27);
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  flex-shrink: 0;
+}
+.quote-icon i {
+  font-size: 60px;
+  color: rgb(224, 239, 70);
+}
+.testimonial-user {
+  display: flex;
+  padding-top: 30px;
+  gap: 30px;
+}
+.testimonial-user img {
+  width: 90px;
+  border-radius: 12px;
+}
+.testimonial-user div h2 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgb(171, 171, 171);
+}
+.testimonial-user div p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(128, 128, 128);
+  margin-top: 3px;
+}
+.testimonial-user div i {
+  color: rgb(255, 187, 51);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 3px;
+}

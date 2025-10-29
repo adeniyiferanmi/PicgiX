@@ -1,0 +1,113 @@
+.contact-us-container {
+  width: 80%;
+  margin: 80px auto;
+  background-color: rgb(20, 27, 19);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 20px;
+}
+.contact-us-container h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
+  color: rgb(171, 171, 171);
+  padding-top: 20px;
+}
+.contact-us-container P {
+  font-size: 18px;
+  color: rgb(150, 150, 150);
+  /* line-height: 20px; */
+  /* margin-top: 20px; */
+}
+.contact-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+.contact-info i {
+  /* color: rgb(171, 171, 171); */
+  color: white;
+  font-size: 28px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: black;
+}
+.contact-info h6 {
+  font-size: 18px;
+  color: rgb(171, 171, 171);
+  margin-bottom: -10px;
+}
+.contact-info p {
+  font-size: 23px;
+  color: white;
+  font-weight: 600;
+}
+.contact-form {
+  width: 100%;
+  padding-top: 15px;
+}
+.contact-input input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 25px;
+  background-color: rgb(171, 171, 171);
+}
+.contact-input ::placeholder {
+  font-size: 20px;
+  color: black;
+}
+.contact-form textarea {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 25px;
+  background-color: rgb(171, 171, 171);
+  padding: 20px;
+  height: 200px;
+}
+.contact-form-container {
+  width: 100%;
+}
+.checkbox-contain {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  color: rgb(171, 171, 171);
+  font-size: 18px;
+}
+.contact-form button{
+    width: 100%;
+    background: linear-gradient(
+    90deg,
+    rgba(255, 255, 0, 0.877),
+    rgba(20, 197, 20, 0.753)
+  );
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(171, 171, 171);
+
+}
+.checkbox-contain input {
+  appearance: none;
+  width: 18px;
+  padding: 8px;
+  /* height: 20px; */
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: transparent;
+  margin-right: 10px;
+}
+.checkbox-contain input:checked{
+    background: linear-gradient(
+    90deg,
+    rgba(255, 255, 0, 0.877),
+    rgba(20, 197, 20, 0.753)
+  );
+}
