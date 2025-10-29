@@ -174,7 +174,7 @@ const DashBoard = () => {
                 Email support
               </p>
               <hr />
-              <button>Subcribe Now </button>
+              <a href="/pricing"><button>Subcribe Now </button></a>
             </div>
             <div>
               <h4>Pro Plan</h4>
@@ -212,7 +212,7 @@ const DashBoard = () => {
                 Priority support
               </p>
               <hr />
-              <button>Subcribe Now</button>
+              <a href="/pricing"><button>Subcribe Now</button></a>
             </div>
             <div>
               <h4>Enterprize Plan</h4>
@@ -249,7 +249,7 @@ const DashBoard = () => {
                 API access & integrations
               </p>
               <hr />
-              <button>Subcribe Now</button>
+              <a href="/pricing"><button>Subcribe Now</button></a>
             </div>
           </div>
         </div>
