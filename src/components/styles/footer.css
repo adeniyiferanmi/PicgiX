@@ -37,8 +37,6 @@
   padding-top: 100px;
 }
 .document-container ul {
-  display: flex;
-  gap: 15px;
   color: rgb(171, 171, 171);
   font-size: 18px;
 }
@@ -60,7 +58,6 @@ hr {
 .paragraph-container {
   color: rgb(171, 171, 171);
   font-size: 16px;
-  /* width: 300px; */
   line-height: 26px;
 }
 .img-container h3 {
@@ -71,6 +68,7 @@ hr {
 .img-container h3:hover {
   color: rgba(180, 253, 53, 0.829);
 }
+
 .example-container {
   color: rgb(171, 171, 171);
   font-size: 18px;
@@ -115,4 +113,14 @@ hr {
     rgba(255, 255, 0, 0.664)
     
   )
+}
+@media(max-width:1000px){
+  .footer-content-container{
+    width: 90%;
+  }
+}
+@media(max-width:600px){
+  .footer-content-container{
+    width: 95%;
+  }
 }

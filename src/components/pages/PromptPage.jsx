@@ -1,4 +1,4 @@
-import React, {  useContext } from "react";
+import React, {  useContext, useState } from "react";
 import HeaderPage from "./HeaderPage";
 import "../styles/prompt.css";
 import SidebarPage from "./SidebarPage";
@@ -9,6 +9,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import MarquePage from "./MarquePage";
 import SectionPage from "./SectionPage";
+import { toast } from "sonner";
 
 const aspectRatio = ["16:9", "4:3", "1:1", "9:16", "3:4"];
 const quality = ["720p", "1080p"];
@@ -43,6 +44,8 @@ const PromptPage = () => {
   const onSubmit = (data) => {
     generateVideo(data);
   };
+
+ 
 
   return (
     <div>
@@ -89,6 +92,7 @@ const PromptPage = () => {
                   data-drawer-target="drawer-navigation"
                   data-drawer-show="drawer-navigation"
                   aria-controls="drawer-navigation"
+                  className="option-button"
                 >
                   <i class="bi bi-gear-fill relative top-2"></i>
                   <i class="bi bi-gear-fill relative"></i>Option
@@ -99,7 +103,7 @@ const PromptPage = () => {
                     placeholder="Describe what you want"
                     {...method.register("prompt")}
                   />
-                  <button disabled={generatingVideo}>
+                  <button disabled={generatingVideo} className="generate-button">
                     {generatingVideo ? (
                       <span class="material-symbols-outlined">
                         progress_activity
@@ -127,7 +131,6 @@ const PromptPage = () => {
           <div className="loading">
             <p>Generating your video, please wait...</p>
             <div className="spinner">
-              {/* <span class="material-symbols-outlined">progress_activity</span> */}
             </div>
           </div>
         )}

@@ -9,15 +9,17 @@ const FooterPage = () => {
     <div>
       <footer class="footer-container ">
         <div className="footer-content-container">
-          <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+          <div class="mx-auto w-full max-w-screen-xl lg:py-8">
             <div class="flex justify-between gap-8 list-container">
-              <div class="mb-6 md:mb-0 img-container w-100">
+             
+              <div class="grid grid-cols-2 sm:grid-cols-4 grid-content gap-20">
+                 <div class="img-container ">
                 <a href="/" class="flex items-center">
                   <img
                     src={picfixLogo}
                     class=""
                     alt="Pixgix Logo"
-                  />
+                  />.
                 </a>
                 <div className="paragraph-container">
                   <p className="paragraph-container">
@@ -29,14 +31,13 @@ const FooterPage = () => {
                   <h3>+365 4359 4358</h3>
                 </div>
               </div>
-              <div class="grid grid-cols-2 sm:grid-cols-3 ">
                 <div>
-                  <h2 class="">
+                  <h2 class="/">
                     Company
                   </h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                     <li class="mb-4">
-                      <a href="" class="hover:underline">
+                      <a href="/contact" class="hover:underline">
                         About Us
                       </a>
                     </li>
@@ -125,7 +126,7 @@ const FooterPage = () => {
                   <h2 class="">
                     Stay Updated
                   </h2>
-                  <p className="w-70">
+                  <p className="">
                     join Pixgix newsletter Stay updated with the latest AI
                     trends and offers.
                   </p>
@@ -147,12 +148,14 @@ const FooterPage = () => {
                         placeholder="Enter Email"
                         required
                       />
+                      <a href="/pricing">
                       <button
                         type="submit"
                         class=" submit-button absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                       >
                         Subscribe
                       </button>
+                      </a>
                     </div>
                   </form>
                 </div>
@@ -166,7 +169,7 @@ const FooterPage = () => {
                 </a>
               </span>
               <div class="flex mt-4 sm:justify-center sm:mt-0 document-container">
-                <ul>
+                <ul className="flex gap-5">
                   <li>
                     <a href="">Help Center</a>
                   </li>

@@ -1,10 +1,6 @@
 .auth-container {
   background-image: url(../Multimedia/images/bg.jpg);
   background-repeat: no-repeat;
-  /* background-size: cover;
-  background-position: center;
-  width: 100%;
-  padding-bottom: 100px; */
   padding-top: 200px;
   padding-bottom: 100px;
 }
@@ -205,3 +201,26 @@ h1 {
 .password-containers:focus-within {
   outline: 3px solid #4caf4f3b;
 }
+@media(max-width:1350px){
+  .form-container{
+    width: 85%;
+  }
+}
+@media(max-width:1150px){
+   .form-container{
+    width: 93%;
+  }
+}
+@media(max-width:1050px){
+   .form-container{
+    width: 98%;
+  }
+}
+@media(max-width:1000px){
+   .form-container{
+    width: 80%;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+

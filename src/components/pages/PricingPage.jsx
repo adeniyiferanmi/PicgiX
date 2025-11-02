@@ -1,13 +1,41 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import HeaderPage from "./HeaderPage";
 import { authContext } from "@/context/AuthContext";
 import MarquePage from "./MarquePage";
+import { Currency, Variable } from "lucide-react";
 
 const PricingPage = () => {
   const { logOut } = useContext(authContext);
+  const [price, setPrice] = useState(59)
+  const [prices, setPrices] = useState(99)
+
+
   const handleLogOut = () => {
     logOut();
   };
+
+   const handlePayment = () => {
+    if (!window.PaystackPop) {
+      toast.error("Paystack script is not loaded")
+    }
+    
+    const Paystack = new window.PaystackPop()
+    Paystack.newTransaction({
+      key:import.meta.env.VITE_PAYSTACK_API,
+      amount:price * 100,
+      currency:"NGN",
+      ref:`AS-${Date.now()}`,
+      metadata:{
+        custom_fields:[
+          {
+            display_name:"Premium",
+            variable_name:"Premium",
+            value:"naira"
+          }
+        ]
+      }
+    })
+  }
   return (
     <div>
       <div className="prompt-container">
@@ -64,11 +92,11 @@ const PricingPage = () => {
                 Email support
               </p>
               <hr />
-              <button>Subcribe Now </button>
+              {/* <button>Subcribe Now </button> */}
             </div>
             <div>
               <h4>Pro Plan</h4>
-              <h1>$59</h1>
+              <h1>{`$${price}`}</h1>
               <hr />
               <p>
                 {" "}
@@ -102,11 +130,11 @@ const PricingPage = () => {
                 Priority support
               </p>
               <hr />
-              <button>Subcribe Now</button>
+              <button onClick={handlePayment}>Subcribe Now</button>
             </div>
             <div>
               <h4>Enterprize Plan</h4>
-              <h1>$99</h1>
+              <h1>{`$${prices}`}</h1>
               <hr />
               <p>
                 <span class="material-symbols-outlined relative top-2">
@@ -139,7 +167,7 @@ const PricingPage = () => {
                 API access & integrations
               </p>
               <hr />
-              <button>Subcribe Now</button>
+              <a href="https://paystack.shop/pay/z4hf25fupr"><button>Subcribe Now</button></a>
             </div>
           </div>
         </div>

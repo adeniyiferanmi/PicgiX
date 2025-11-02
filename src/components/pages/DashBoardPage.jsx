@@ -15,13 +15,13 @@ const DashBoard = () => {
       <div className="ai-container text-60px">
         <div className="w-150 text-container">
           <h1>
-            AI  
+            AI   
               <span
               style={{
                 color: "rgb(191,249,57)",
               }}
             >
-              Generate
+               Generate
             </span>
             <br />
             <span style={{ color: "rgb(241,234,77)" }}> Video</span> by
