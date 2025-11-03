@@ -72,7 +72,7 @@ const LoginPage = () => {
               </span>
             </div>
           </div>
-          <div className="flex justify-between mb-4 w-100">
+          <div className="flex justify-between mb-4 w-100 checkbox-content">
             <div>
               <input type="checkbox" className="checkbox-container" required />
               <label htmlFor="remember me">Remember me</label>
@@ -94,14 +94,12 @@ const LoginPage = () => {
               </span>
             </button>
           </div>
-          <div className="text-center">
+          <div className="text-center continue-container">
             <p>
-              _________________
               <span className="span-container">Or Continue With:</span>
-              ____________________
             </p>
           </div>
-          <div className="flex justify-between google-container">
+          <div className="flex justify-between gap-5 google-container">
             <div className="flex">
               <button>
                 <img

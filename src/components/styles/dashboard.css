@@ -61,6 +61,11 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   height: 400px;
 }
+.video-aboutus-container{
+  background-color: white;
+  border-radius: 20px;
+
+}
 .about-us-container button {
   width: 300px;
   padding: 15px;
@@ -94,7 +99,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url("https://photoclerks.com/html/pixgix/pixgix/assets/images/icon/sub-title.svg")
+  background: url("https://photoclerks.com/html/pixgix-update/pixgix/assets/images/icon/sub-title.svg")
     no-repeat center center;
   background-size: contain;
 }
@@ -132,7 +137,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url("https://photoclerks.com/html/pixgix/pixgix/assets/images/icon/sub-title.svg")
+  background: url("https://photoclerks.com/html/pixgix-update/pixgix/assets/images/icon/sub-title.svg")
     no-repeat center center;
   background-size: contain;
 }
@@ -191,7 +196,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url("https://photoclerks.com/html/pixgix/pixgix/assets/images/icon/sub-title.svg")
+  background: url("https://photoclerks.com/html/pixgix-update/pixgix/assets/images/icon/sub-title.svg")
     no-repeat center center;
   background-size: contain;
 }
@@ -260,7 +265,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url("https://photoclerks.com/html/pixgix/pixgix/assets/images/icon/sub-title.svg")
+  background: url("https://photoclerks.com/html/pixgix-update/pixgix/assets/images/icon/sub-title.svg")
     no-repeat center center;
   background-size: contain;
 }
@@ -351,7 +356,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url("https://photoclerks.com/html/pixgix/pixgix/assets/images/icon/sub-title.svg")
+  background: url("https://photoclerks.com/html/pixgix-update/pixgix/assets/images/icon/sub-title.svg")
     no-repeat center center;
   background-size: contain;
 }
@@ -421,7 +426,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url("https://photoclerks.com/html/pixgix/pixgix/assets/images/icon/sub-title.svg")
+  background: url("https://photoclerks.com/html/pixgix-update/pixgix/assets/images/icon/sub-title.svg")
     no-repeat center center;
   background-size: contain;
 }
@@ -503,4 +508,146 @@
   display: inline-flex;
   align-items: center;
   padding: 3px;
+}
+.text-to-video-text-container{
+  width: 100%;
+}
+.textTovideo-img-container{
+  width: 100%;
+}
+@media (max-width: 1130px) {
+  .ai-container {
+    width: 95%;
+  }
+}
+@media (max-width: 1000px) {
+  .ai-container {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+.text-container  {
+  width: 100%;
+  text-align: center;
+}
+.text-container h1{
+  width: 80%;
+  margin: auto;
+  font-size: 60px;
+  text-align: center;
+}
+.text-container p{
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+}
+.about-us-container {
+  flex-direction: column-reverse;
+  width: 90%;
+}
+.aboutus-paragraph{
+  justify-content: center;
+}
+.video-container img{
+  width: 100%;
+}
+.video-container{
+  width: 90%;
+}
+.video-aboutus-container {
+  width: 100%;
+}
+.video-aboutus-container video{
+  width: 100%;
+}
+.text-aboutus-container{
+  width: 100%;
+}
+.video-gallery-container{
+  grid-template-columns: auto auto;
+}
+.gallery-container{
+  width: 90%;
+}
+.text-to-video-container{
+  width: 90%;
+  flex-direction: column;
+  text-align: center;
+}
+.text-to-video-container img{
+  padding-top: 40px;
+}
+.text-to-video-text-container .par {
+  justify-content: center;
+}
+.subcription-grid-container {
+  grid-template-columns: repeat(2,1fr);
+}
+.subcription-content{
+  width: 90%;
+}
+.feature-display-container{
+  flex-direction: column;
+  align-items: flex-start;
+}
+.feature-content{
+  width: 90%;
+}
+.feature-display-container img{
+  width: 90px;
+}
+.testimonial-content{
+  width: 90%;
+}
+.testimonial-display-container {
+  background-color: rgb(28, 35, 27);
+  padding: 20px;
+  font-size: 15px;
+  width: 100%;
+}
+}
+@media(max-width:650px){
+  .subcription-grid-container {
+  grid-template-columns: repeat(1,1fr);
+}
+.feature-grid-container{
+  grid-template-columns: auto;
+}
+.video-gallery-container{
+  grid-template-columns: auto;
+
+}
+.video-gallery-container video{
+  margin-top: 30px;
+}
+.text-container h1{
+  width: 95%;
+
+}
+.text-container p{
+  width: 95%;
+  
+}
+
+}
+@media(max-width:450px){
+  .dashboard-container button{
+  width: 95%;
+}
+.dashboard-container h1{
+  font-size: 30px;
+  line-height: 35px;
+}
+.dashboard-container p{
+  font-size: 16px;
+  line-height: 19px;
+}
+.text-container h1{
+  font-size: 30px;
+  line-height: 35px;
+}
+.testimonial-display-container {
+  width: 400px;
+}
 }

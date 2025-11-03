@@ -4,26 +4,32 @@ import "../styles/dashboard.css";
 import pixfix from "../Multimedia/images/HEYGEN-Orb-SocialAnimation-Exp-unscreen.gif";
 import pixfixVideo from "../Multimedia/videos/video_4736be8da8 (1).mp4";
 import MarquePage from "./MarquePage";
+import testimonialImg from "../Multimedia/images/4.jpg"
+import testimonialImage from "../Multimedia/images/5.jpg"
+
 
 const DashBoard = () => {
   return (
     <div className="dashboard-container relative min-h-screen bg-cover bg-center">
-      <HeaderPage headerLogin={"Login"}
-      headerSignUp={"Signup"} 
-      headerLinks={"/login"}
-      headerLink={"/signup"}/>
+      <HeaderPage
+        headerLogin={"Login"}
+        headerSignUp={"Signup"}
+        headerLinks={"/login"}
+        headerLink={"/signup"}
+      />
       <div className="ai-container text-60px">
         <div className="w-150 text-container">
           <h1>
-            AI   
-              <span
+            AI
+            <span
               style={{
                 color: "rgb(191,249,57)",
+                marginLeft: "10px",
               }}
             >
-               Generate
+              Generate
             </span>
-            <br />
+            {/* <br /> */}
             <span style={{ color: "rgb(241,234,77)" }}> Video</span> by
             Artificial Intelligence
           </h1>
@@ -77,10 +83,16 @@ const DashBoard = () => {
           </div>
           <div className="video-gallery-container">
             <div>
-              <video src="https://tempfile.aiquickdraw.com/p/f879c606-799c-4315-981d-c22b25252ada.mp4" controls></video>
+              <video
+                src="https://tempfile.aiquickdraw.com/p/f879c606-799c-4315-981d-c22b25252ada.mp4"
+                controls
+              ></video>
             </div>
             <div>
-              <video src="https://tempfile.aiquickdraw.com/p/eb3d4d0c-9c5c-48a5-87bf-7bc956f9a443.mp4" controls></video>
+              <video
+                src="https://tempfile.aiquickdraw.com/p/eb3d4d0c-9c5c-48a5-87bf-7bc956f9a443.mp4"
+                controls
+              ></video>
             </div>
             <div>
               <video
@@ -114,7 +126,12 @@ const DashBoard = () => {
           <div className="text-to-video-text-container">
             <p className="par">Text to Video</p>
             <h1>Simple Text Prompts</h1>
-            <p>PicgiX AI turns your words into the stunning videos.</p>
+            <p>
+              Our mission is to revolutionize the way you create visuals by
+              harnessing on the power of AI to generate stunning, high-quality
+              videos. Whether you're an artist, designer, or business
+              professional.
+            </p>
             <button>
               Enter your prompt{" "}
               <span class="material-symbols-outlined relative top-2">
@@ -122,7 +139,7 @@ const DashBoard = () => {
               </span>
             </button>
           </div>
-          <div>
+          <div className="textTovideo-img-container">
             <img
               src="https://d9hhrg4mnvzow.cloudfront.net/ubitems.grooic.com/vido-ai-video-generator-lp/36d08217-text-to-video-card_10fu0gi000000000000000.png"
               alt=""
@@ -174,7 +191,9 @@ const DashBoard = () => {
                 Email support
               </p>
               <hr />
-              <a href="/pricing"><button>Subcribe Now </button></a>
+              <a href="/pricing">
+                <button>Subcribe Now </button>
+              </a>
             </div>
             <div>
               <h4>Pro Plan</h4>
@@ -212,7 +231,9 @@ const DashBoard = () => {
                 Priority support
               </p>
               <hr />
-              <a href="/pricing"><button>Subcribe Now</button></a>
+              <a href="/pricing">
+                <button>Subcribe Now</button>
+              </a>
             </div>
             <div>
               <h4>Enterprize Plan</h4>
@@ -249,7 +270,9 @@ const DashBoard = () => {
                 API access & integrations
               </p>
               <hr />
-              <a href="/pricing"><button>Subcribe Now</button></a>
+              <a href="/pricing">
+                <button>Subcribe Now</button>
+              </a>
             </div>
           </div>
         </div>
@@ -322,139 +345,139 @@ const DashBoard = () => {
             <h1>Our Clients Says About Pixgix</h1>
           </div>
           <div className="testimonial-wrapper">
-          <div className="testimonial-grid-container">
-            <div className="testimonial-display-container">
-              <div className="quote-icon">
-              <i class="bi bi-quote"></i>
-              </div>
-              <div>
-                <p>
-                  "I was blown away by the quality of the AI-generated videos!
-                  The platform is incredibly intuitive, and within minutes, I
-                  had is and stunning visuals that perfectly matched my vision.
-                  As someone with limited design skills, I was amazed at how
-                  professional the images looked. This tool has saved me hours
-                  of work, and I can't imagine running my business without it
-                  now."
-                </p>
-                <div className="testimonial-user">
-                  <img
-                    src="https://photoclerks.com/html/pixgix/pixgix/assets/images/testimonial/1.jpg"
-                    alt=""
-                  />
-                  <div>
-                    <h2>Emily Rayhan</h2>
-                    <p>Graphic designer</p>
+            <div className="testimonial-grid-container">
+              <div className="testimonial-display-container">
+                <div className="quote-icon">
+                  <i class="bi bi-quote"></i>
+                </div>
+                <div>
+                  <p>
+                    "I was blown away by the quality of the AI-generated videos!
+                    The platform is incredibly intuitive, and within minutes, I
+                    had is and stunning visuals that perfectly matched my
+                    vision. As someone with limited design skills, I was amazed
+                    at how professional the images looked. This tool has saved
+                    me hours of work, and I can't imagine running my business
+                    without it now."
+                  </p>
+                  <div className="testimonial-user">
+                    <img
+                      src={testimonialImg}
+                      alt=""
+                    />
                     <div>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
+                      <h2>Emily Rayhan</h2>
+                      <p>Graphic designer</p>
+                      <div>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="testimonial-display-container">
-              <div className="quote-icon">
-              <i class="bi bi-quote"></i>
-              </div>
-              <div>
-                <p>
-                  "I was blown away by the quality of the AI-generated videos!
-                  The platform is incredibly intuitive, and within minutes, I
-                  had is and stunning visuals that perfectly matched my vision.
-                  As someone with limited design skills, I was amazed at how
-                  professional the images looked. This tool has saved me hours
-                  of work, and I can't imagine running my business without it
-                  now."
-                </p>
-                <div className="testimonial-user">
-                  <img
-                    src="https://photoclerks.com/html/pixgix/pixgix/assets/images/testimonial/2.jpg"
-                    alt=""
-                  />
-                  <div>
-                    <h2>John Smith</h2>
-                    <p>Marketing Manager</p>
+              <div className="testimonial-display-container">
+                <div className="quote-icon">
+                  <i class="bi bi-quote"></i>
+                </div>
+                <div>
+                  <p>
+                    "I was blown away by the quality of the AI-generated videos!
+                    The platform is incredibly intuitive, and within minutes, I
+                    had is and stunning visuals that perfectly matched my
+                    vision. As someone with limited design skills, I was amazed
+                    at how professional the images looked. This tool has saved
+                    me hours of work, and I can't imagine running my business
+                    without it now."
+                  </p>
+                  <div className="testimonial-user">
+                    <img
+                      src={testimonialImage}
+                      alt=""
+                    />
                     <div>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
+                      <h2>John Smith</h2>
+                      <p>Marketing Manager</p>
+                      <div>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-             <div className="testimonial-display-container">
-              <div className="quote-icon">
-              <i class="bi bi-quote"></i>
-              </div>
-              <div>
-                <p>
-                  "I was blown away by the quality of the AI-generated videos!
-                  The platform is incredibly intuitive, and within minutes, I
-                  had is and stunning visuals that perfectly matched my vision.
-                  As someone with limited design skills, I was amazed at how
-                  professional the images looked. This tool has saved me hours
-                  of work, and I can't imagine running my business without it
-                  now."
-                </p>
-                <div className="testimonial-user">
-                  <img
-                    src="https://photoclerks.com/html/pixgix/pixgix/assets/images/testimonial/1.jpg"
-                    alt=""
-                  />
-                  <div>
-                    <h2>Emily Rayhan</h2>
-                    <p>Graphic designer</p>
+              <div className="testimonial-display-container">
+                <div className="quote-icon">
+                  <i class="bi bi-quote"></i>
+                </div>
+                <div>
+                  <p>
+                    "I was blown away by the quality of the AI-generated videos!
+                    The platform is incredibly intuitive, and within minutes, I
+                    had is and stunning visuals that perfectly matched my
+                    vision. As someone with limited design skills, I was amazed
+                    at how professional the images looked. This tool has saved
+                    me hours of work, and I can't imagine running my business
+                    without it now."
+                  </p>
+                  <div className="testimonial-user">
+                    <img
+                      src={testimonialImg}
+                      alt=""
+                    />
                     <div>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
+                      <h2>Emily Rayhan</h2>
+                      <p>Graphic designer</p>
+                      <div>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-             <div className="testimonial-display-container">
-              <div className="quote-icon">
-              <i class="bi bi-quote"></i>
-              </div>
-              <div>
-                <p>
-                  "I was blown away by the quality of the AI-generated videos!
-                  The platform is incredibly intuitive, and within minutes, I
-                  had is and stunning visuals that perfectly matched my vision.
-                  As someone with limited design skills, I was amazed at how
-                  professional the images looked. This tool has saved me hours
-                  of work, and I can't imagine running my business without it
-                  now."
-                </p>
-                <div className="testimonial-user">
-                  <img
-                    src="https://photoclerks.com/html/pixgix/pixgix/assets/images/testimonial/2.jpg"
-                    alt=""
-                  />
-                  <div>
-                    <h2>John Smith</h2>
-                    <p>Marketing Manager</p>
+              <div className="testimonial-display-container">
+                <div className="quote-icon">
+                  <i class="bi bi-quote"></i>
+                </div>
+                <div>
+                  <p>
+                    "I was blown away by the quality of the AI-generated videos!
+                    The platform is incredibly intuitive, and within minutes, I
+                    had is and stunning visuals that perfectly matched my
+                    vision. As someone with limited design skills, I was amazed
+                    at how professional the images looked. This tool has saved
+                    me hours of work, and I can't imagine running my business
+                    without it now."
+                  </p>
+                  <div className="testimonial-user">
+                    <img
+                      src={testimonialImage}
+                      alt=""
+                    />
                     <div>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
+                      <h2>John Smith</h2>
+                      <p>Marketing Manager</p>
+                      <div>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
             </div>
           </div>
         </div>

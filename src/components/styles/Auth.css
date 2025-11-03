@@ -103,7 +103,6 @@ h1 {
   border: none;
   color: gray;
   padding: 15px;
-  /* width: 100%; */
   border-radius: 4px;
   font-weight: bold;
   margin-top: 20px;
@@ -124,7 +123,7 @@ h1 {
   font-size: 20px;
 }
 .name-email-container input:focus {
-  outline: 3px solid #4caf4f3b; 
+  outline: 3px solid #4caf4f3b;
 }
 
 .flex-container {
@@ -134,7 +133,6 @@ h1 {
   appearance: none;
   width: 18px;
   padding: 8px;
-  /* height: 20px; */
   border: 1px solid #555;
   border-radius: 4px;
   background-color: transparent;
@@ -178,16 +176,32 @@ h1 {
   background-color: rgb(20, 27, 19);
   padding: 8px;
 }
-.password-containers{
+.continue-container {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+.continue-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+  z-index: -1;
+}
+
+.password-containers {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 1px solid #333;
   flex-direction: row !important;
-  /* width: 90%; */
   padding: 19px;
   border: none;
-  color: rgb(143,146,146);
+  color: rgb(143, 146, 146);
   border-radius: 10px;
   margin-top: 20px;
   font-size: 20px;
@@ -196,31 +210,95 @@ h1 {
     border: none !important;
     outline: none;
   }
- 
 }
 .password-containers:focus-within {
   outline: 3px solid #4caf4f3b;
 }
-@media(max-width:1350px){
-  .form-container{
+@media (max-width: 1350px) {
+  .form-container {
     width: 85%;
   }
 }
-@media(max-width:1150px){
-   .form-container{
+@media (max-width: 1150px) {
+  .form-container {
     width: 93%;
   }
 }
-@media(max-width:1050px){
-   .form-container{
+@media (max-width: 1050px) {
+  .form-container {
     width: 98%;
   }
 }
-@media(max-width:1000px){
-   .form-container{
+@media (max-width: 1000px) {
+  .form-container {
     width: 80%;
     flex-direction: column-reverse;
     justify-content: center;
+  }
+  .image-container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-container img {
+    width: 100%;
+  }
+  .masked-image {
+    width: 100%;
+  }
+  .name-email-container input {
+    width: 100%;
+  }
+  .password-containers {
+    width: 100%;
+  }
+  .flex-container {
+    width: 100%;
+  }
+  .checkbox-content {
+    width: 100%;
+  }
+  .button-container button {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .google-container {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 620px) {
+  .form-container {
+    width: 90%;
+    padding: 30px 40px;
+  }
+}
+@media (max-width: 530px) {
+  .form-container {
+    width: 95%;
+    padding: 20px 30px;
+  }
+  .google-container{
+    width: 100%;
+  }
+  .google-container div{
+    width: 100%;
+  }
+  .google-container button{
+    width: 100%;
+  }
+}
+@media (max-width: 350px) {
+  .form-container{
+    width: 98%;
+    padding: 20px 15px;
+    font-size: 15px;
+  }
+  .password-container{
+    font-size: 15px;
+  }
+  .checkbox-content label{
+    font-size: 15px;
   }
 }
 
