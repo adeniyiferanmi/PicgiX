@@ -47,7 +47,6 @@ const VideoProvider = ({ children }) => {
       });
       const res = await response.json();
       setData(res);
-      console.log(res);
     } catch (error) {
       console.log(error);
       setError(error);

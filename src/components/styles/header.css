@@ -119,3 +119,8 @@ nav li:hover{
     display: none;
   }
 }
+@media(max-width:450px) {
+   .ul-button-container{
+    display: flex;
+  }
+}

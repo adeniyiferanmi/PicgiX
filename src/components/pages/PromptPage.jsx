@@ -1,4 +1,4 @@
-import React, {  useContext, useState } from "react";
+import React, { useContext, useState } from "react";
 import HeaderPage from "./HeaderPage";
 import "../styles/prompt.css";
 import SidebarPage from "./SidebarPage";
@@ -44,8 +44,6 @@ const PromptPage = () => {
   const onSubmit = (data) => {
     generateVideo(data);
   };
-
- 
 
   return (
     <div>
@@ -102,8 +100,14 @@ const PromptPage = () => {
                     type="text"
                     placeholder="Describe what you want"
                     {...method.register("prompt")}
+                    className={
+                      method.formState.errors.prompt ? "input-error" : ""
+                    }
                   />
-                  <button disabled={generatingVideo} className="generate-button">
+                  <button
+                    disabled={generatingVideo}
+                    className="generate-button"
+                  >
                     {generatingVideo ? (
                       <span class="material-symbols-outlined">
                         progress_activity
@@ -130,8 +134,7 @@ const PromptPage = () => {
         {generatingVideo && (
           <div className="loading">
             <p>Generating your video, please wait...</p>
-            <div className="spinner">
-            </div>
+            <div className="spinner"></div>
           </div>
         )}
         {datas?.videoInfo?.videoUrl && (
@@ -150,17 +153,17 @@ const PromptPage = () => {
           <p>Explore our collection of</p>
           <h1> AI-Generated Videos</h1>
         </div>
-        <SectionPage/>
+        <SectionPage />
         <div className="view-container">
           <a href="/videos">
-          <button>
-            <i class="bi bi-gear-fill relative top-2"></i>{" "}
-            <i class="bi bi-gear-fill "></i> View More Videos
-          </button>
+            <button>
+              <i class="bi bi-gear-fill relative top-2"></i>{" "}
+              <i class="bi bi-gear-fill "></i> View More Videos
+            </button>
           </a>
         </div>
       </div>
-      <MarquePage/>
+      <MarquePage />
     </div>
   );
 };
